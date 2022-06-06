@@ -2,4 +2,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 360px;
+    width: 100vw;
+}
+
+#chart {
+    height: 1000px;
+    width: 50%;
+}
+
+@media (max-width:1206px) {
+    #chart {
+        width: 100%;
+    }
 }

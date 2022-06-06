@@ -1,0 +1,49 @@
+[{
+    "general_title": "Televisão",
+    "seguranca": { "title": "Segurança/Violência", "votes": 44 },
+    "educacao": { "title": "Educação", "votes": 3 },
+    "saude": { "title": "Saúde", "votes": 3 },
+    "saneamento": { "title": "Saneamento básico", "votes": 0 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 3 },
+    "transporte": { "title": "Transporte público", "votes": 2 }
+}, {
+    "general_title": "Rádio AM",
+    "seguranca": { "title": "Segurança/Violência", "votes": 3 },
+    "educacao": { "title": "Educação", "votes": 0 },
+    "saude": { "title": "Saúde", "votes": 0 },
+    "saneamento": { "title": "Saneamento básico", "votes": 0 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 0 },
+    "transporte": { "title": "Transporte público", "votes": 0 }
+}, {
+    "general_title": "Rádio FM",
+    "seguranca": { "title": "Segurança/Violência", "votes": 3 },
+    "educacao": { "title": "Educação", "votes": 0 },
+    "saude": { "title": "Saúde", "votes": 1 },
+    "saneamento": { "title": "Saneamento básico", "votes": 0 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 2 },
+    "transporte": { "title": "Transporte público", "votes": 1 }
+}, {
+    "general_title": "Internet",
+    "seguranca": { "title": "Segurança/Violência", "votes": 34 },
+    "educacao": { "title": "Educação", "votes": 3 },
+    "saude": { "title": "Saúde", "votes": 2 },
+    "saneamento": { "title": "Saneamento básico", "votes": 1 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 5 },
+    "transporte": { "title": "Transporte público", "votes": 2 }
+}, {
+    "general_title": "Grupos de WhatsApp",
+    "seguranca": { "title": "Segurança/Violência", "votes": 13 },
+    "educacao": { "title": "Educação", "votes": 0 },
+    "saude": { "title": "Saúde", "votes": 0 },
+    "saneamento": { "title": "Saneamento básico", "votes": 0 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 1 },
+    "transporte": { "title": "Transporte público", "votes": 1 }
+}, {
+    "general_title": "Outros",
+    "seguranca": { "title": "Segurança/Violência", "votes": 4 },
+    "educacao": { "title": "Educação", "votes": 3 },
+    "saude": { "title": "Saúde", "votes": 2 },
+    "saneamento": { "title": "Saneamento básico", "votes": 0 },
+    "alimentacao": { "title": "Alimentação/fome/pobreza", "votes": 4 },
+    "transporte": { "title": "Transporte público", "votes": 1 }
+}]

@@ -11,7 +11,7 @@ div.visualization_wrap {
   border: 1px solid gray;
   position: relative;
   padding-bottom: 80%;
-  height: 0;
+  height: 500px;
   overflow: hidden;
 }
 div.chart {
@@ -20,4 +20,7 @@ div.chart {
   left: 0;
   width: 100%;
   height: 100%;
+}
+div.visualization_wrap.pie {
+  height: 0;
 }

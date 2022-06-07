@@ -1,6 +1,7 @@
 fetch('response.json')
   .then(response => response.json())
   .then(json => {
+    let secondResponse
     function setChart() {
       google.charts.load('current', {
         packages: ['corechart'],
@@ -132,8 +133,50 @@ fetch('response.json')
         )
         second_chart.draw(generalData, secondOption)
       })
+
+      google.charts.setOnLoadCallback(() => {
+        var generalData = google.visualization.arrayToDataTable([
+          ['Principais problemas', 'votos'],
+          [secondResponse[0].title, secondResponse[0].votes],
+          [secondResponse[1].title, secondResponse[1].votes],
+          [secondResponse[2].title, secondResponse[2].votes],
+          [secondResponse[3].title, secondResponse[3].votes],
+          [secondResponse[4].title, secondResponse[4].votes],
+          [secondResponse[5].title, secondResponse[5].votes]
+        ])
+        var secondOption = {
+          title: 'Principais problemas'
+        }
+        var second_chart = new google.visualization.ColumnChart(
+          document.getElementById('second-media')
+        )
+        second_chart.draw(generalData, secondOption)
+      })
+      google.charts.setOnLoadCallback(() => {
+        var generalData = google.visualization.arrayToDataTable([
+          ['Principais problemas', 'votos'],
+          [secondResponse[0].title, secondResponse[0].votes],
+          [secondResponse[1].title, secondResponse[1].votes],
+          [secondResponse[2].title, secondResponse[2].votes],
+          [secondResponse[3].title, secondResponse[3].votes],
+          [secondResponse[4].title, secondResponse[4].votes],
+          [secondResponse[5].title, secondResponse[5].votes]
+        ])
+        var secondOption = {
+          title: 'Principais problemas'
+        }
+        var second_chart = new google.visualization.PieChart(
+          document.getElementById('second-media-pie')
+        )
+        second_chart.draw(generalData, secondOption)
+      })
     }
 
-    setChart()
-    window.onresize = setChart
+    fetch('./second_response.json')
+      .then(response => response.json())
+      .then(secondJson => {
+        secondResponse = secondJson
+        setChart()
+        window.onresize = setChart
+      })
   })

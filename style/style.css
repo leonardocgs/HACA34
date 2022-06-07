@@ -1,25 +1,22 @@
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-width: 630px;
-
-  width: 100vw;
-}
-
-.chart {
   width: 80%;
-  min-height: 450px;
+  margin: 10% auto;
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-.row {
-  margin: 0 !important;
+div.visualization_wrap {
+  border: 1px solid gray;
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  overflow: hidden;
 }
-.bar {
-  height: 1000px;
+div.chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

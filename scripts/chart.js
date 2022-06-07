@@ -112,6 +112,26 @@ fetch('response.json')
         )
         second_chart.draw(generalData, secondOption)
       })
+      google.charts.setOnLoadCallback(() => {
+        var generalData = google.visualization.arrayToDataTable([
+          ['Fontes de informação', 'votos'],
+          [json[0].general_title, json[0].total],
+          [json[1].general_title, json[1].total],
+          [json[2].general_title, json[2].total],
+          [json[3].general_title, json[3].total],
+          [json[4].general_title, json[4].total],
+          [json[5].general_title, json[5].total]
+        ])
+        var secondOption = {
+          title: 'Principais fontes de informacao',
+          width: 'auto',
+          height: 'auto'
+        }
+        var second_chart = new google.visualization.PieChart(
+          document.getElementById('media-pie')
+        )
+        second_chart.draw(generalData, secondOption)
+      })
     }
 
     setChart()

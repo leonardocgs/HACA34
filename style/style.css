@@ -1,25 +1,25 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-width: 620px;
+  min-width: 630px;
+
   width: 100vw;
 }
 
-#chart {
-  height: 1000px;
-  width: 50%;
+.chart {
+  width: 80%;
+  min-height: 450px;
 }
-
-@media (max-width: 1206px) {
-  #chart {
-    width: 100%;
-    min-width: 600px;
-  }
-  #media {
-    height: 1000px;
-    min-width: 600px;
-    width: 80%;
-  }
+.row {
+  margin: 0 !important;
+}
+.bar {
+  height: 1000px;
 }

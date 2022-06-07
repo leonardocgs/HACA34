@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  min-width: 700px;
 }
 div.visualization_wrap {
   border: 1px solid gray;

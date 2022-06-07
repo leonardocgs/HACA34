@@ -1,18 +1,25 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 360px;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 620px;
+  width: 100vw;
 }
 
 #chart {
-    height: 1000px;
-    width: 50%;
+  height: 1000px;
+  width: 50%;
 }
 
-@media (max-width:1206px) {
-    #chart {
-        width: 100%;
-    }
+@media (max-width: 1206px) {
+  #chart {
+    width: 100%;
+    min-width: 600px;
+  }
+  #media {
+    height: 1000px;
+    min-width: 600px;
+    width: 80%;
+  }
 }
